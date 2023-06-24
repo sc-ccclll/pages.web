@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-<iframe  src="https://www.baidu.com/s?wd="></iframe>
+<iframe id="bi_iframe" src="https://cn.bing.com"  onload="adjustIframe();" frameborder="0" scrolling="auto" ></iframe>
+<script>
+    function adjustIframe(){
+        var ifm= document.getElementById("bi_iframe");
+        ifm.height=document.documentElement.clientHeight;
+        ifm.width=document.documentElement.clientWidth;
+    } 
+</script>
 </body>
 </html>
